@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<!-- Style Files 1=Mine / 2=Sweat Alert / 3=Font -->
+	<link rel="stylesheet" href="Assest/css/main.css"/>
+	<link rel="stylesheet" href="Assest/css/sweetalert2.min.css"/>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet"/>
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="assest/Img/favicon.png" type="image/x-icon" />
+	<title>Coder</title>
+</head>
+<body>
+<div class="main">
+	<!-- first -->
+	<div class="first-col">
+		<!-- Menu -->
+		<div class="menu">
+			<ul class="smenu menup">
+				<li class="menu-item" id="html"> Html </li>
+				<li class="menu-item" id="css"> Css </li>
+				<li class="menu-item" id="js"> Js</li>
+				<li class="menu-item" id="tool"> Tools <img class="dropdown-img" src="Assest/Img/Arrow.png">
+					<ul id="toolsmenu" class="dropdown invisible">
+						<li onclick="boostrp()" class="dropdown menu-item">Boostrap 4.5.0</li>
+						<li onclick="jquery()" class="dropdown menu-item">Jquery 3.5.1</li>
+					</ul>
+				</li>
+				<li class="menu-item">
+					<input class="btn" type="button" onclick="codes()" value="Start">
+				</li>
+			</ul>
+		</div>
+		<!-- Text area -->
+		<div class="editor">
+			<textarea id="html-area" class="hmtlcode html-editor textarea" style="display: block;" placeholder="HTML EDITOR"></textarea>
+			<textarea id="css-area" class="csscode css-editor textarea" style="display: none;" placeholder="CSS EDITOR"></textarea>
+			<textarea id="js-area" class="jscode js-editor textarea" style="display: none;" placeholder="JS EDITOR"></textarea>
+		</div>
+		<!-- footer menu -->
+		<div class="menu">
+			<form method="post" class="settings-form" onSubmit="return false" name="editorstyle">
+				<ul class="smenu">
+					<li class="menu-item"><label>Font Color:<span id="fcolorspan" class="color"><input id="fcolor" type="Color" name="fontcolor"></span></label></li>
+					<li class="menu-item"><label>Backgorund Color:<span id="bgcolorspan" class="color"><input id="bgcolor" type="Color" name="bgcolor"></span></label></li>
+					<li class="menu-item"><div class="fontsize-container"><label class="font-size" for="fontsize">Font Size :</label><input id="fontsize" type="number" name="size" value="16"></div></li>
+					<li class="menu-item"><button onclick="styles()" class="btn" type="submit">Apply</button></li>
+				</ul>
+			</form>
+		</div>
+	</div>
+	<div class="secound-col">
+		<div class="container2">
+			<iframe id="screen" class="ifrascreen"></iframe>
+		</div>
+	</div>
+</div>
+	<!-- Script Filer 1=jquery / 2=sweat Alert / 3=Mine -->
+	<script src="Assest/Js/jquery-3.5.1.min.js"></script>
+	<script src="Assest/Js/sweetalert2.all.min.js"></script>
+	<script src="Assest/Js/main.js"></script>
+</body>
+</html>
